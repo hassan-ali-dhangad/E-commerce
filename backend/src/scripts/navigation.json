@@ -1,0 +1,67 @@
+{
+  "pages": [
+    {
+      "section": "MAIN",
+      "name": "Dashboard",
+      "icon": "LayoutDashboard",
+      "path": "/admin/dashboard",
+      "description": "Overview of your ShopSphere store"
+    },
+    {
+      "section": "CATALOG",
+      "name": "Products",
+      "icon": "ShoppingBag",
+      "path": "/admin/products",
+      "description": "Manage store products"
+    },
+    {
+      "section": "CATALOG",
+      "name": "Categories",
+      "icon": "Folder",
+      "path": "/admin/categories",
+      "description": "Manage product categories"
+    },
+    {
+      "section": "SALES",
+      "name": "Orders",
+      "icon": "ShoppingCart",
+      "path": "/admin/orders",
+      "description": "Manage customer orders"
+    },
+    {
+      "section": "CUSTOMERS",
+      "name": "Customers",
+      "icon": "Users",
+      "path": "/admin/customers",
+      "description": "Manage customers"
+    },
+    {
+      "section": "SYSTEM",
+      "name": "Analytics",
+      "icon": "BarChart3",
+      "path": "/admin/analytics",
+      "description": "View store analytics"
+    },
+    {
+      "section": "SYSTEM",
+      "name": "Users",
+      "icon": "Users",
+      "path": "/admin/users",
+      "description": "Manage system users"
+    },
+    {
+      "section": "SYSTEM",
+      "name": "Roles",
+      "icon": "Shield",
+      "path": "/admin/roles",
+      "description": "Manage system roles and permissions"
+    },
+    {
+      "section": "SYSTEM",
+      "name": "Settings",
+      "icon": "Settings",
+      "path": "/admin/settings",
+      "description": "Manage system settings"
+    }
+  ]
+}
