@@ -3,7 +3,9 @@ const API_URL = "http://localhost:5000/api";
 const request = async (endpoint, options = {}) => {
   const response = await fetch(`${API_URL}${endpoint}`, {
     ...options,
+
     credentials: "include",
+
     headers: {
       "Content-Type": "application/json",
       ...(options.headers || {}),
@@ -80,6 +82,21 @@ export const resetPassword = (
   });
 };
 
+export const changePassword = (
+  currentPassword,
+  newPassword,
+  confirmNewPassword
+) => {
+  return request("/auth/change-password", {
+    method: "POST",
+    body: JSON.stringify({
+      currentPassword,
+      newPassword,
+      confirmNewPassword,
+    }),
+  });
+};
+
 export const getMe = () => {
   return request("/auth/me", {
     method: "GET",
@@ -89,5 +106,11 @@ export const getMe = () => {
 export const logout = () => {
   return request("/auth/logout", {
     method: "POST",
+  });
+};
+
+export const deleteAccount = () => {
+  return request("/auth/delete-account", {
+    method: "DELETE",
   });
 };

@@ -7,9 +7,9 @@ import cookieParser from "cookie-parser";
 dotenv.config();
 
 // 2. Bypass SSL certificate validation locally if needed
-if (process.env.NODE_ENV !== "production") {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-}
+// if (process.env.NODE_ENV !== "production") {
+//   process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+// }
 
 // 3. Import routes and database config after dotenv
 import connectDB from "./src/config/db.js";
@@ -58,7 +58,7 @@ app.use((req, res) => {
 });
 
 // Server listener
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

@@ -404,7 +404,7 @@ const Categories = () => {
               <span className="font-semibold text-slate-700">
                 "{categoryToDelete.name}"
               </span>
-              ? This action cannot be undone.
+              ?
             </p>
 
             <div className="mt-6 flex justify-end gap-3">

@@ -9,15 +9,10 @@ const AdminLayout = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Sidebar
-        isOpen={sidebarOpen}
-        onClose={() => setSidebarOpen(false)}
-      />
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-      <div className="lg:ml-[250px]">
-        <Topbar
-          onMenuClick={() => setSidebarOpen(true)}
-        />
+      <div className="relative lg:ml-[250px]">
+        <Topbar onMenuClick={() => setSidebarOpen(true)} />
 
         <main className="p-4 sm:p-6 lg:p-8">
           <Outlet />

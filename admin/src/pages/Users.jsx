@@ -680,10 +680,6 @@ const Users = () => {
               ?
             </p>
 
-            <p className="mt-2 text-xs text-red-500">
-              This action cannot be undone.
-            </p>
-
             {/* BUTTONS */}
 
             <div className="mt-6 flex justify-end gap-3">

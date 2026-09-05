@@ -19,10 +19,6 @@ import { useAuth } from "../../context/AuthContext";
 import { getPages } from "../../services/pageService";
 import toast from "react-hot-toast";
 
-// =====================================================
-// ICON MAP
-// =====================================================
-
 const iconMap = {
   LayoutDashboard,
   ShoppingBag,
